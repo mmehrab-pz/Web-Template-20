@@ -1,2 +1,39 @@
-@import "tailwindcss";
 /* npx @tailwindcss/cli -i ./src/styles/master.css -o ./src/styles/output.css --watch */
+@import "tailwindcss";
+
+@layer base{
+    @font-face {
+        font-family: 'reg';
+        src: url(../fonts/Inter-Regular.ttf);
+    }
+    @font-face {
+        font-family: 'med';
+        src: url(../fonts/Inter-Medium.ttf);
+    }
+    @font-face {
+        font-family: 'semiBold';
+        src: url(../fonts/Inter-SemiBold.ttf);
+    }
+    @font-face {
+        font-family: 'bold';
+        src: url(../fonts/Inter-Bold.ttf);
+    }
+    @font-face {
+        font-family: 'exBold';
+        src: url(../fonts/Inter-ExtraBold.ttf);
+    }
+}
+
+@layer components{
+
+}
+
+@layer utilities{
+    .bt{
+        border: 1px solid white;
+    }
+}
+
+@theme {
+   --color-primary: #8522dc;
+}

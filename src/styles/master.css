@@ -28,7 +28,24 @@
     }
 }
 
-@layer components {}
+@layer components {
+    .btn {
+        height: 61px;
+        width: 190px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: white;
+        text-transform: capitalize;
+        font-family: 'semiBold';
+        background-image: linear-gradient(180deg, #A259E4 -25%, #7B10DB 30%);
+        border-radius: 50px;
+
+        @apply w-[127px] h-[45px] text-[14px] xl:w-[190px] xl:h-[61px] xl:text-[16px]
+
+    }
+}
 
 @layer utilities {
     .bt {
@@ -37,6 +54,7 @@
 
     .bg {
         position: relative;
+
         &::before {
             content: '';
             background-color: transparent;
@@ -48,6 +66,12 @@
             top: 0;
             left: 0;
             z-index: -1;
+        }
+    }
+
+    @keyframes anim1 {
+        100%{
+            transform: translateY(-50px);
         }
     }
 }

@@ -1,39 +1,57 @@
 /* npx @tailwindcss/cli -i ./src/styles/master.css -o ./src/styles/output.css --watch */
 @import "tailwindcss";
 
-@layer base{
+@layer base {
     @font-face {
         font-family: 'reg';
         src: url(../fonts/Inter-Regular.ttf);
     }
+
     @font-face {
         font-family: 'med';
         src: url(../fonts/Inter-Medium.ttf);
     }
+
     @font-face {
         font-family: 'semiBold';
         src: url(../fonts/Inter-SemiBold.ttf);
     }
+
     @font-face {
         font-family: 'bold';
         src: url(../fonts/Inter-Bold.ttf);
     }
+
     @font-face {
         font-family: 'exBold';
         src: url(../fonts/Inter-ExtraBold.ttf);
     }
 }
 
-@layer components{
+@layer components {}
 
-}
-
-@layer utilities{
-    .bt{
+@layer utilities {
+    .bt {
         border: 1px solid white;
+    }
+
+    .bg {
+        position: relative;
+        &::before {
+            content: '';
+            background-color: transparent;
+            background-image: radial-gradient(at center center, #ffffff00 40%, #13072f 100%);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
     }
 }
 
 @theme {
-   --color-primary: #8522dc;
+    --color-primary: #8522dc;
 }

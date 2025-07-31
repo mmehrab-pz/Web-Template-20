@@ -247,6 +247,9 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-12 {
+    margin-top: calc(var(--spacing) * 12);
+  }
   .mt-15 {
     margin-top: calc(var(--spacing) * 15);
   }
@@ -255,6 +258,12 @@
   }
   .mt-\[100px\] {
     margin-top: 100px;
+  }
+  .mt-\[145px\] {
+    margin-top: 145px;
+  }
+  .mt-\[150px\] {
+    margin-top: 150px;
   }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
@@ -319,6 +328,9 @@
   .h-\[130px\] {
     height: 130px;
   }
+  .h-\[145px\] {
+    height: 145px;
+  }
   .h-\[290px\] {
     height: 290px;
   }
@@ -327,6 +339,9 @@
   }
   .h-\[500vh\] {
     height: 500vh;
+  }
+  .h-\[690px\] {
+    height: 690px;
   }
   .h-fit {
     height: fit-content;
@@ -360,6 +375,12 @@
   }
   .w-\[70\%\] {
     width: 70%;
+  }
+  .w-\[80\%\] {
+    width: 80%;
+  }
+  .w-\[80\] {
+    width: 80;
   }
   .w-\[90\%\] {
     width: 90%;
@@ -482,6 +503,9 @@
   .bg-\[\#100628\] {
     background-color: #100628;
   }
+  .bg-\[url\] {
+    background-color: url;
+  }
   .bg-amber-300 {
     background-color: var(--color-amber-300);
   }
@@ -498,8 +522,35 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\'\'\)\] {
+    background-image: url('');
+  }
+  .bg-\[url\(\'\.\.\'\)\] {
+    background-image: url('..');
+  }
+  .bg-\[url\(\'\.\.\/\'\)\] {
+    background-image: url('../');
+  }
+  .bg-\[url\(\'\.\.\/img\'\)\] {
+    background-image: url('../img');
+  }
+  .bg-\[url\(\'\.\.\/img\/\'\)\] {
+    background-image: url('../img/');
+  }
   .bg-\[url\(\'\.\.\/img\/img02\.jpg\'\)\] {
     background-image: url('../img/img02.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/img22\'\)\] {
+    background-image: url('../img/img22');
+  }
+  .bg-\[url\(\'\.\.\/img\/img22\.jpg\'\)\] {
+    background-image: url('../img/img22.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/img22\.png\'\)\] {
+    background-image: url('../img/img22.png');
+  }
+  .bg-\[url\(\)\] {
+    background-image: url();
   }
   .from-\[\#A259E4\] {
     --tw-gradient-from: #A259E4;
@@ -514,6 +565,9 @@
   }
   .bg-cover {
     background-size: cover;
+  }
+  .bg-fixed {
+    background-attachment: fixed;
   }
   .bg-center {
     background-position: center;
@@ -547,6 +601,12 @@
   }
   .py-\[30px\] {
     padding-block: 30px;
+  }
+  .py-\[70px\] {
+    padding-block: 70px;
+  }
+  .py-\[145px\] {
+    padding-block: 145px;
   }
   .pt-\[40px\] {
     padding-top: 40px;
@@ -629,6 +689,9 @@
   }
   .text-\[18px\] {
     font-size: 18px;
+  }
+  .text-\[22px\] {
+    font-size: 22px;
   }
   .text-\[24px\] {
     font-size: 24px;
@@ -878,6 +941,11 @@
       font-size: 16px;
     }
   }
+  .lg\:mt-7 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * 7);
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -898,6 +966,16 @@
       width: 25%;
     }
   }
+  .lg\:w-\[85\%\] {
+    @media (width >= 64rem) {
+      width: 85%;
+    }
+  }
+  .lg\:w-\[85\] {
+    @media (width >= 64rem) {
+      width: 85;
+    }
+  }
   .lg\:w-\[400px\] {
     @media (width >= 64rem) {
       width: 400px;
@@ -911,6 +989,11 @@
   .lg\:py-15 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 15);
+    }
+  }
+  .lg\:py-\[100px\] {
+    @media (width >= 64rem) {
+      padding-block: 100px;
     }
   }
   .lg\:pt-\[100px\] {
@@ -960,6 +1043,11 @@
       margin-inline: calc(var(--spacing) * 0);
     }
   }
+  .xl\:mt-10 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 10);
+    }
+  }
   .xl\:mr-5 {
     @media (width >= 80rem) {
       margin-right: calc(var(--spacing) * 5);
@@ -995,6 +1083,11 @@
       width: 45%;
     }
   }
+  .xl\:w-\[70\%\] {
+    @media (width >= 80rem) {
+      width: 70%;
+    }
+  }
   .xl\:w-\[158px\] {
     @media (width >= 80rem) {
       width: 158px;
@@ -1018,6 +1111,11 @@
   .xl\:py-20 {
     @media (width >= 80rem) {
       padding-block: calc(var(--spacing) * 20);
+    }
+  }
+  .xl\:py-\[145px\] {
+    @media (width >= 80rem) {
+      padding-block: 145px;
     }
   }
   .xl\:text-start {

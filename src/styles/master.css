@@ -42,9 +42,22 @@
         background-image: linear-gradient(180deg, #A259E4 -25%, #7B10DB 30%);
         border-radius: 50px;
 
-        @apply w-[127px] h-[45px] text-[14px] xl:w-[190px] xl:h-[61px] xl:text-[16px]
+        @apply hover:-translate-y-2 duration-500 w-[127px] h-[45px]  text-[14px] xl:w-[190px] xl:h-[61px] xl:text-[16px]
 
     }
+
+    .res{
+        @apply px-[2%] 2xl:px-[13%]
+    }
+
+    .title{
+        @apply text-white text-[14px] xl:text-[18px] justify-center xl:justify-start capitalize font-[med] mb-5 flex items-center *:w-2.5 *:h-2.5 *:rounded-full *:flex *:bg-white *:mr-3.5 *:animate-pulse
+    }
+
+    .titleCap{
+        @apply text-[#cdc5df] text-[24px] text-center xl:text-start xl:text-6xl font-[reg] *:text-white xl:leading-[65px]
+    }
+    
 }
 
 @layer utilities {

@@ -10,7 +10,7 @@
 
 <body class="select-none">
     <!-- -------------------------------------------------------header------------------------------------------------------------- -->
-    <header class="bg w[100%] px-[2%] 2xl:px-[13%] pt-[40px] pb-[100px]">
+    <header class="bg w[100%] res pt-[40px] pb-[100px]">
         <span
             class=" bg-[url('../img/img02.jpg')] bg-cover bg-center bg-no-repeat absolute w-full h-full top-0 left-0 -z-2"></span>
         <!-- -----------------------nav bar---------------------- -->
@@ -113,7 +113,7 @@
                 devices to personalized services.
             </p>
             <div class="mt-8 flex items-center justify-center lg:justify-start">
-                <a href="#" class="btn hover:-translate-y-2 duration-500">get started</a>
+                <a href="#" class="btn">get started</a>
                 <a href="#"
                     class="text-white font-[semiBold] capitalize ml-7 underline decoration-1 hover:text-primary duration-200">see
                     pricing</a>
@@ -141,7 +141,7 @@
         </section>
     </header>
     <!-- -------------------------------------------------------main------------------------------------------------------------- -->
-    <main class="bg-[#13072F] w-full h-[100vh]">
+    <main class="bg-[#13072F] w-full h-[500vh]">
         <!-- -------------------------------------brands------------------------------------- -->
         <section id="brands"
             class="w-full py-10 lg:py-15 xl:py-20 flex justify-around flex-wrap *:w-1/2 *:flex *:justify-center *:mb-6 *:xl:mb-0 *:lg:w-1/4 *:xl:w-auto">
@@ -177,6 +177,45 @@
                 <img src="src/img/img04.png" alt=""
                     class="opacity-20 duration-300 hover:opacity-100 hover:-translate-y-2.5">
             </figure>
+        </section>
+        <!-- -------------------------------------about us------------------------------------- -->
+        <section id="aboutUs" class="w-full flex flex-wrap res relative">
+            <figure class="absolute left-0 -bottom-180 z-1">
+                <img src="src/img/img20.png" alt="">
+            </figure>
+            <div class="w-full xl:w-3/5 flex flex-col justify-between relative z-2">
+                <div>
+                    <h2 class="title">
+                        <span></span>
+                        about us
+                    </h2>
+                    <p class="titleCap mb-5 xl:mb-16">
+                        We are passionate about harnessing the power of <span>artificial intelligence</span> to solve
+                        real-world problems.
+                    </p>
+                    <a href="#" class="btn mx-auto xl:mx-0">read more</a>
+                </div>
+                <div class="w-full flex flex-wrap justify-center xl:justify-start items-center mt-5">
+                    <span class="h-[72px] w-full xl:w-[45%] 2xl:w-[33%] rounded-[50px] border-1 border-[#CDC5DF33] flex items-center pl-[15px]">
+                        <figure>
+                            <img src="src/img/img11.png" alt="">
+                        </figure>
+                        <div class="*:text-white capitalize font-[reg] ml-3">
+                            <h5 class="text-[18px]">32K+</h5>
+                            <h6 class="text-[14px]">Satisfied clients</h6>
+                        </div>
+                    </span>
+                    <p class="text-white font-[reg] ml-3 mt-5 text-center xl:text-start">Proudly powering success for our <br> satisfied partners.</p>
+                </div>
+            </div>
+            <div class="w-full xl:w-2/5 flex justify-center xl:justify-end  relative z-2 mt-10">
+                <figure class="w-fit overflow-hidden rounded-4xl bg-amber-300">
+                    <img src="src/img/img13.jpg" alt="">
+                </figure>
+                <figure class="hidden xl:flex w-[280px] h-[290px] overflow-hidden rounded-4xl absolute bottom-0 xl:left-[-120px] 2xl:left-[-220px]">
+                    <img src="src/img/img12.jpg" alt="">
+                </figure>
+            </div>
         </section>
     </main>
 </body>

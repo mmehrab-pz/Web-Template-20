@@ -55,7 +55,7 @@
     }
 
     .title {
-        @apply text-white text-[14px] xl:text-[18px] justify-center xl:justify-start capitalize font-[med] mb-5 flex items-center *:w-2.5 *:h-2.5 *:rounded-full *:flex *:bg-white *:mr-3.5 *:animate-pulse
+        @apply text-white text-[14px] lg:text-[16px] xl:text-[18px] justify-center xl:justify-start capitalize font-[med] mb-5 flex items-center *:w-2.5 *:h-2.5 *:rounded-full *:flex *:bg-white *:mr-3.5 *:animate-pulse
     }
 
     .titleCap {

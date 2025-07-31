@@ -230,6 +230,12 @@
   .h-\[75px\] {
     height: 75px;
   }
+  .h-\[100px\] {
+    height: 100px;
+  }
+  .h-\[100vh\] {
+    height: 100vh;
+  }
   .h-\[130px\] {
     height: 130px;
   }
@@ -288,8 +294,14 @@
   .resize {
     resize: both;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
+  }
+  .justify-around {
+    justify-content: space-around;
   }
   .justify-center {
     justify-content: center;
@@ -338,6 +350,12 @@
   }
   .bg-\[\#2e154191\] {
     background-color: #2e154191;
+  }
+  .bg-\[\#13072F\] {
+    background-color: #13072F;
+  }
+  .bg-\[13072F\] {
+    background-color: 13072F;
   }
   .bg-primary {
     background-color: var(--color-primary);
@@ -392,6 +410,12 @@
   }
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
   }
   .pt-\[40px\] {
     padding-top: 40px;
@@ -480,6 +504,15 @@
   .decoration-2 {
     text-decoration-thickness: 2px;
   }
+  .opacity-2 {
+    opacity: 2%;
+  }
+  .opacity-20 {
+    opacity: 20%;
+  }
+  .opacity-\[0\.2\] {
+    opacity: 0.2;
+  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
@@ -501,9 +534,33 @@
     --tw-duration: 500ms;
     transition-duration: 500ms;
   }
+  .select-none {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .\*\:mb-4 {
+    :is(& > *) {
+      margin-bottom: calc(var(--spacing) * 4);
+    }
+  }
+  .\*\:mb-6 {
+    :is(& > *) {
+      margin-bottom: calc(var(--spacing) * 6);
+    }
+  }
+  .\*\:mb-8 {
+    :is(& > *) {
+      margin-bottom: calc(var(--spacing) * 8);
+    }
+  }
   .\*\:block {
     :is(& > *) {
       display: block;
+    }
+  }
+  .\*\:flex {
+    :is(& > *) {
+      display: flex;
     }
   }
   .\*\:h-full {
@@ -511,9 +568,19 @@
       height: 100%;
     }
   }
+  .\*\:w-1\/2 {
+    :is(& > *) {
+      width: calc(1/2 * 100%);
+    }
+  }
   .\*\:w-full {
     :is(& > *) {
       width: 100%;
+    }
+  }
+  .\*\:justify-center {
+    :is(& > *) {
+      justify-content: center;
     }
   }
   .\*\:text-\[16px\] {
@@ -537,6 +604,11 @@
       text-transform: capitalize;
     }
   }
+  .\*\*\:opacity-\[0\.2\] {
+    :is(& *) {
+      opacity: 0.2;
+    }
+  }
   .group-hover\:scale-y-100 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -549,6 +621,22 @@
     &:hover {
       @media (hover: hover) {
         --tw-translate-y: calc(var(--spacing) * -2);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .hover\:-translate-y-2\.5 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-translate-y: calc(var(--spacing) * -2.5);
+        translate: var(--tw-translate-x) var(--tw-translate-y);
+      }
+    }
+  }
+  .hover\:translate-y-2\.5 {
+    &:hover {
+      @media (hover: hover) {
+        --tw-translate-y: calc(var(--spacing) * 2.5);
         translate: var(--tw-translate-x) var(--tw-translate-y);
       }
     }
@@ -571,6 +659,20 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-white);
+      }
+    }
+  }
+  .hover\:opacity-1 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 1%;
+      }
+    }
+  }
+  .hover\:opacity-100 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 100%;
       }
     }
   }
@@ -597,6 +699,11 @@
   .lg\:justify-start {
     @media (width >= 64rem) {
       justify-content: flex-start;
+    }
+  }
+  .lg\:py-15 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 15);
     }
   }
   .lg\:pt-\[100px\] {
@@ -629,6 +736,13 @@
       font-size: 80px;
     }
   }
+  .\*\:lg\:w-1\/4 {
+    :is(& > *) {
+      @media (width >= 64rem) {
+        width: calc(1/4 * 100%);
+      }
+    }
+  }
   .xl\:mr-5 {
     @media (width >= 80rem) {
       margin-right: calc(var(--spacing) * 5);
@@ -649,6 +763,11 @@
       padding-inline: 30px;
     }
   }
+  .xl\:py-20 {
+    @media (width >= 80rem) {
+      padding-block: calc(var(--spacing) * 20);
+    }
+  }
   .xl\:text-\[16px\] {
     @media (width >= 80rem) {
       font-size: 16px;
@@ -662,6 +781,20 @@
   .xl\:text-\[120px\] {
     @media (width >= 80rem) {
       font-size: 120px;
+    }
+  }
+  .\*\:xl\:mb-0 {
+    :is(& > *) {
+      @media (width >= 80rem) {
+        margin-bottom: calc(var(--spacing) * 0);
+      }
+    }
+  }
+  .\*\:xl\:w-auto {
+    :is(& > *) {
+      @media (width >= 80rem) {
+        width: auto;
+      }
     }
   }
   .\32 xl\:px-\[13\%\] {
